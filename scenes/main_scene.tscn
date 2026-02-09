@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://dg6aekh8uvjva"]
 
+[ext_resource type="Texture2D" uid="uid://g6dh5a1vs87t" path="res://assets/chat.png" id="1_w2twt"]
+
 [node name="Main_scene" type="Control" unique_id=1795256459]
 layout_mode = 3
 anchors_preset = 15
@@ -9,6 +11,20 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="apps" type="VBoxContainer" parent="." unique_id=1243599652]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -324.5
 offset_right = 84.0
-offset_bottom = 649.0
+offset_bottom = 324.5
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="apps" unique_id=1609564281]
+layout_mode = 2
+theme_override_font_sizes/font_size = 75
+icon = ExtResource("1_w2twt")
+
+[node name="Button2" type="Button" parent="apps" unique_id=255397859]
+layout_mode = 2
+icon = ExtResource("1_w2twt")
