@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://kss5t28jtqsd"]
+[gd_scene format=3 uid="uid://dg6aekh8uvjva"]
 
 [node name="Main_scene" type="Control" unique_id=1795256459]
 layout_mode = 3
@@ -7,3 +7,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="apps" type="VBoxContainer" parent="." unique_id=1243599652]
+layout_mode = 0
+offset_right = 84.0
+offset_bottom = 649.0
