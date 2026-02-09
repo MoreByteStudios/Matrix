@@ -1,6 +1,7 @@
-[gd_scene format=3 uid="uid://dg6aekh8uvjva"]
+[gd_scene format=3 uid="uid://kss5t28jtqsd"]
 
-[ext_resource type="Texture2D" uid="uid://g6dh5a1vs87t" path="res://assets/chat.png" id="1_w2twt"]
+[ext_resource type="Script" uid="uid://ds35y22ygy43a" path="res://scenes/main_scene.gd" id="1_w2twt"]
+[ext_resource type="Script" uid="uid://bysgorcj35riv" path="res://scenes/panel_manager.gd" id="2_pw63i"]
 
 [node name="Main_scene" type="Control" unique_id=1795256459]
 layout_mode = 3
@@ -9,22 +10,84 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_w2twt")
 
-[node name="apps" type="VBoxContainer" parent="." unique_id=1243599652]
+[node name="PanelManager" type="MarginContainer" parent="." unique_id=1281344323]
 layout_mode = 1
-anchors_preset = 4
-anchor_top = 0.5
-anchor_bottom = 0.5
-offset_top = -324.5
-offset_right = 84.0
-offset_bottom = 324.5
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+script = ExtResource("2_pw63i")
 
-[node name="Button" type="Button" parent="apps" unique_id=1609564281]
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelManager" unique_id=1996371619]
 layout_mode = 2
-theme_override_font_sizes/font_size = 75
-icon = ExtResource("1_w2twt")
 
-[node name="Button2" type="Button" parent="apps" unique_id=255397859]
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelManager/HBoxContainer" unique_id=18136456]
 layout_mode = 2
-icon = ExtResource("1_w2twt")
+
+[node name="Planning" type="Button" parent="PanelManager/HBoxContainer/VBoxContainer" unique_id=1636859730]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Planning"
+
+[node name="Button2" type="Button" parent="PanelManager/HBoxContainer/VBoxContainer" unique_id=362787199]
+unique_name_in_owner = true
+layout_mode = 2
+text = "iets anders"
+
+[node name="Button3" type="Button" parent="PanelManager/HBoxContainer/VBoxContainer" unique_id=1135641291]
+unique_name_in_owner = true
+layout_mode = 2
+text = "hehe"
+
+[node name="Button4" type="Button" parent="PanelManager/HBoxContainer/VBoxContainer" unique_id=1692590474]
+unique_name_in_owner = true
+layout_mode = 2
+text = "ok
+"
+
+[node name="PlanningContainer" type="PanelContainer" parent="PanelManager/HBoxContainer" unique_id=491756170]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="PanelManager/HBoxContainer/PlanningContainer" unique_id=961979393]
+layout_mode = 2
+text = "`hi
+"
+
+[node name="PanelContainer2" type="PanelContainer" parent="PanelManager/HBoxContainer" unique_id=2043347896]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="PanelManager/HBoxContainer/PanelContainer2" unique_id=88136505]
+layout_mode = 2
+text = "ik ben ton"
+
+[node name="PanelContainer3" type="PanelContainer" parent="PanelManager/HBoxContainer" unique_id=1637176977]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="PanelManager/HBoxContainer/PanelContainer3" unique_id=8347118]
+layout_mode = 2
+text = "f you"
+
+[node name="PanelContainer4" type="PanelContainer" parent="PanelManager/HBoxContainer" unique_id=2067425251]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="PanelManager/HBoxContainer/PanelContainer4" unique_id=126757761]
+layout_mode = 2
+text = "bhahahhaa l"
