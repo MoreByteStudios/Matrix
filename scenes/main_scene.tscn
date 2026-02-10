@@ -2,6 +2,9 @@
 
 [ext_resource type="Script" uid="uid://ds35y22ygy43a" path="res://scenes/main_scene.gd" id="1_w2twt"]
 [ext_resource type="Script" uid="uid://bysgorcj35riv" path="res://scenes/panel_manager.gd" id="2_pw63i"]
+[ext_resource type="Script" uid="uid://b82uum4bxjgo5" path="res://scenes/planning_container.gd" id="3_7ykc4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7ykc4"]
 
 [node name="Main_scene" type="Control" unique_id=1795256459]
 layout_mode = 3
@@ -13,12 +16,14 @@ grow_vertical = 2
 script = ExtResource("1_w2twt")
 
 [node name="PanelManager" type="MarginContainer" parent="." unique_id=1281344323]
+show_behind_parent = true
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 0
 theme_override_constants/margin_left = 50
 theme_override_constants/margin_top = 50
 theme_override_constants/margin_right = 50
@@ -26,41 +31,293 @@ theme_override_constants/margin_bottom = 50
 script = ExtResource("2_pw63i")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="PanelManager" unique_id=1996371619]
+show_behind_parent = true
 layout_mode = 2
+mouse_filter = 0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="PanelManager/HBoxContainer" unique_id=18136456]
 layout_mode = 2
+mouse_filter = 0
 
 [node name="Planning" type="Button" parent="PanelManager/HBoxContainer/VBoxContainer" unique_id=1636859730]
 unique_name_in_owner = true
 layout_mode = 2
 text = "Planning"
 
+[node name="Button3" type="Button" parent="PanelManager/HBoxContainer/VBoxContainer" unique_id=1135641291]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Settings"
+
 [node name="Button2" type="Button" parent="PanelManager/HBoxContainer/VBoxContainer" unique_id=362787199]
 unique_name_in_owner = true
 layout_mode = 2
 text = "iets anders"
 
-[node name="Button3" type="Button" parent="PanelManager/HBoxContainer/VBoxContainer" unique_id=1135641291]
-unique_name_in_owner = true
-layout_mode = 2
-text = "hehe"
-
 [node name="Button4" type="Button" parent="PanelManager/HBoxContainer/VBoxContainer" unique_id=1692590474]
 unique_name_in_owner = true
 layout_mode = 2
-text = "ok
+text = "Exit"
+
+[node name="VSeparator" type="VSeparator" parent="PanelManager/HBoxContainer" unique_id=1919301596]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+
+[node name="PlanningContainer" type="PanelContainer" parent="PanelManager/HBoxContainer" unique_id=751967230]
+unique_name_in_owner = true
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+script = ExtResource("3_7ykc4")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer" unique_id=570216985]
+layout_mode = 2
+size_flags_horizontal = 0
+mouse_filter = 0
+
+[node name="Control" type="Control" parent="PanelManager/HBoxContainer/PlanningContainer/VBoxContainer" unique_id=2071067883]
+layout_mode = 2
+
+[node name="AgendaButton" type="Button" parent="PanelManager/HBoxContainer/PlanningContainer/VBoxContainer/Control" unique_id=1881956096]
+unique_name_in_owner = true
+top_level = true
+clip_contents = true
+layout_mode = 0
+offset_left = 177.0
+offset_top = 51.0
+offset_right = 304.0
+offset_bottom = 82.0
+text = "Agenda"
+
+[node name="TasksButton" type="Button" parent="PanelManager/HBoxContainer/PlanningContainer/VBoxContainer/Control" unique_id=1157018068]
+unique_name_in_owner = true
+top_level = true
+clip_contents = true
+layout_mode = 0
+offset_left = 177.0
+offset_top = 85.0
+offset_right = 304.0
+offset_bottom = 116.0
+text = "Tasks"
+
+[node name="SchoolPlanning" type="Button" parent="PanelManager/HBoxContainer/PlanningContainer/VBoxContainer/Control" unique_id=2080119524]
+unique_name_in_owner = true
+top_level = true
+clip_contents = true
+layout_mode = 0
+offset_left = 177.0
+offset_top = 120.0
+offset_right = 304.0
+offset_bottom = 151.0
+text = "Schoolplanning
 "
 
-[node name="PlanningContainer" type="PanelContainer" parent="PanelManager/HBoxContainer" unique_id=491756170]
+[node name="HBoxContainer2" type="HBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer" unique_id=1910387206]
+layout_mode = 2
+
+[node name="TasksUi" type="MarginContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2" unique_id=260663023]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_right = 50
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/TasksUi" unique_id=2031958225]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/TasksUi/HBoxContainer" unique_id=1338243782]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/TasksUi/HBoxContainer/VBoxContainer" unique_id=896294803]
+layout_mode = 2
+text = "hier komen de tasks"
+
+[node name="AgendaUI" type="MarginContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2" unique_id=722491970]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_constants/margin_left = 182
+theme_override_constants/margin_right = 50
 
-[node name="Label" type="Label" parent="PanelManager/HBoxContainer/PlanningContainer" unique_id=961979393]
+[node name="Control" type="Control" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI" unique_id=1532197523]
 layout_mode = 2
-text = "`hi
-"
+
+[node name="VandaagButton" type="Button" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/Control" unique_id=1949211100]
+unique_name_in_owner = true
+top_level = true
+layout_mode = 0
+offset_left = 177.0
+offset_top = 222.0
+offset_right = 306.0
+offset_bottom = 253.0
+text = "      Vandaag       "
+
+[node name="MaandButton" type="Button" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/Control" unique_id=2106661935]
+unique_name_in_owner = true
+top_level = true
+layout_mode = 0
+offset_left = 177.0
+offset_top = 257.0
+offset_right = 306.0
+offset_bottom = 288.0
+text = "        Maand        "
+
+[node name="AngendaVbox" type="VBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI" unique_id=124927577]
+layout_mode = 2
+
+[node name="HSeparator" type="HSeparator" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox" unique_id=1064879180]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(0, 15)
+layout_mode = 2
+
+[node name="WeekDatumContainer" type="HBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox" unique_id=2025727087]
+layout_mode = 2
+
+[node name="PreviosButton" type="Button" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/WeekDatumContainer" unique_id=1725699002]
+layout_mode = 2
+size_flags_horizontal = 2
+text = "Previos"
+
+[node name="Label" type="Label" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/WeekDatumContainer" unique_id=1883511867]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Februari 2026"
+
+[node name="NextButton" type="Button" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/WeekDatumContainer" unique_id=1582631349]
+layout_mode = 2
+size_flags_horizontal = 10
+text = "Next"
+
+[node name="DagenContainers" type="HBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox" unique_id=1268149662]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Maandag" type="VBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers" unique_id=676638865]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Dinsdag" type="VBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers" unique_id=1540583309]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Woensdag" type="VBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers" unique_id=1893068041]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Donderdag" type="VBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers" unique_id=183183543]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Vrijdag" type="VBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers" unique_id=1119714456]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Zaterdag" type="VBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers" unique_id=357184296]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Zondag" type="VBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers" unique_id=793543232]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VandaagContainer" type="PanelContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI" unique_id=145357278]
+unique_name_in_owner = true
+visible = false
+light_mask = 3
+visibility_layer = 3
+custom_minimum_size = Vector2(600, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_7ykc4")
+
+[node name="hitboxcontrol" type="Control" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/VandaagContainer" unique_id=469795042]
+layout_mode = 2
+
+[node name="ColorRect" type="ColorRect" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/VandaagContainer/hitboxcontrol" unique_id=652742296]
+top_level = true
+layout_mode = 0
+offset_left = 359.0
+offset_top = 50.0
+offset_right = 959.0
+offset_bottom = 1030.0
+color = Color(0.099985994, 0.099985994, 0.099985994, 1)
+
+[node name="Label" type="Label" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/VandaagContainer/hitboxcontrol/ColorRect" unique_id=448135456]
+layout_mode = 0
+offset_top = 478.0
+offset_right = 600.0
+offset_bottom = 501.0
+text = "hoi"
+
+[node name="Control" type="Control" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/VandaagContainer" unique_id=1715809521]
+show_behind_parent = true
+layout_mode = 2
+
+[node name="CloseButton" type="Button" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/VandaagContainer/Control" unique_id=2116805335]
+unique_name_in_owner = true
+self_modulate = Color(1, 1, 1, 0)
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -359.0
+offset_top = -50.0
+offset_right = 961.0
+offset_bottom = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MaandContainer" type="PanelContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI" unique_id=1710050017]
+unique_name_in_owner = true
+visible = false
+custom_minimum_size = Vector2(600, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="hitboxcontrol" type="Control" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/MaandContainer" unique_id=1101791423]
+layout_mode = 2
+
+[node name="ColorRect" type="ColorRect" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/MaandContainer/hitboxcontrol" unique_id=1755302856]
+top_level = true
+layout_mode = 0
+offset_left = 359.0
+offset_top = 50.0
+offset_right = 959.0
+offset_bottom = 1030.0
+color = Color(0.099985994, 0.099985994, 0.099985994, 1)
+
+[node name="Label" type="Label" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/MaandContainer/hitboxcontrol/ColorRect" unique_id=1012985323]
+layout_mode = 0
+offset_top = 478.0
+offset_right = 600.0
+offset_bottom = 501.0
+text = "Jaha"
+
+[node name="Control" type="Control" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/MaandContainer" unique_id=617102422]
+show_behind_parent = true
+layout_mode = 2
+
+[node name="CloseButton2" type="Button" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/MaandContainer/Control" unique_id=395295255]
+unique_name_in_owner = true
+self_modulate = Color(1, 1, 1, 0)
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -359.0
+offset_top = -50.0
+offset_right = 961.0
+offset_bottom = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Schoolplanning" type="MarginContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2" unique_id=294311556]
+unique_name_in_owner = true
+layout_mode = 2
 
 [node name="PanelContainer2" type="PanelContainer" parent="PanelManager/HBoxContainer" unique_id=2043347896]
 unique_name_in_owner = true
@@ -91,3 +348,8 @@ size_flags_horizontal = 3
 [node name="Label" type="Label" parent="PanelManager/HBoxContainer/PanelContainer4" unique_id=126757761]
 layout_mode = 2
 text = "bhahahhaa l"
+
+[connection signal="pressed" from="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/Control/VandaagButton" to="PanelManager/HBoxContainer/PlanningContainer" method="_on_vandaag_button_pressed"]
+[connection signal="pressed" from="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/Control/MaandButton" to="PanelManager/HBoxContainer/PlanningContainer" method="_on_maand_button_pressed"]
+[connection signal="pressed" from="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/VandaagContainer/Control/CloseButton" to="PanelManager/HBoxContainer/PlanningContainer" method="_on_close_button_pressed"]
+[connection signal="pressed" from="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/MaandContainer/Control/CloseButton2" to="PanelManager/HBoxContainer/PlanningContainer" method="_on_close_button_2_pressed"]

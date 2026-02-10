@@ -17,7 +17,7 @@ func _ready() -> void:
 	button_3.pressed.connect(show_panel.bind(panels[2]))
 	button_4.pressed.connect(show_panel.bind(panels[3]))
 	
-	show_panel(panels[0])
+	show_panel(panels[1])
 	planning.grab_focus()
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 	

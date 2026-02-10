@@ -1,0 +1,162 @@
+[gd_scene format=3 uid="uid://b6hwgxoiexkt"]
+
+[node name="PlanningContainer" type="PanelContainer" unique_id=409310187]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+
+[node name="PlanningManager" type="MarginContainer" parent="." unique_id=1671530325]
+layout_mode = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="PlanningManager" unique_id=1234947987]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PlanningManager/HBoxContainer2" unique_id=2045562456]
+layout_mode = 2
+
+[node name="TasksButton" type="Button" parent="PlanningManager/HBoxContainer2/VBoxContainer" unique_id=126676095]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Tasks"
+
+[node name="AgendaButton" type="Button" parent="PlanningManager/HBoxContainer2/VBoxContainer" unique_id=361716746]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Agenda"
+
+[node name="SchoolPlanning" type="Button" parent="PlanningManager/HBoxContainer2/VBoxContainer" unique_id=145959668]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Schoolplanning
+"
+
+[node name="ExitButton" type="Button" parent="PlanningManager/HBoxContainer2/VBoxContainer" unique_id=477986499]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Back
+"
+
+[node name="TasksUi" type="MarginContainer" parent="PlanningManager/HBoxContainer2" unique_id=1754664418]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_right = 50
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PlanningManager/HBoxContainer2/TasksUi" unique_id=350651356]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PlanningManager/HBoxContainer2/TasksUi/HBoxContainer" unique_id=892395626]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PlanningManager/HBoxContainer2/TasksUi/HBoxContainer/VBoxContainer" unique_id=1328599670]
+layout_mode = 2
+text = "hier komen de tasks"
+
+[node name="AgendaUI" type="MarginContainer" parent="PlanningManager/HBoxContainer2" unique_id=205747520]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_right = 50
+
+[node name="Control" type="Control" parent="PlanningManager/HBoxContainer2/AgendaUI" unique_id=1118009057]
+layout_mode = 2
+
+[node name="VandaagButton" type="Button" parent="PlanningManager/HBoxContainer2/AgendaUI/Control" unique_id=22188593]
+layout_mode = 0
+offset_left = -180.0
+offset_top = 172.0
+offset_right = -55.0
+offset_bottom = 203.0
+text = "      Vandaag      "
+
+[node name="MaandButton" type="Button" parent="PlanningManager/HBoxContainer2/AgendaUI/Control" unique_id=904905532]
+layout_mode = 0
+offset_left = -182.0
+offset_top = 206.0
+offset_right = -54.0
+offset_bottom = 237.0
+text = "        Maand        "
+
+[node name="AngendaVbox" type="VBoxContainer" parent="PlanningManager/HBoxContainer2/AgendaUI/Control/MaandButton" unique_id=741745456]
+layout_mode = 0
+offset_left = 182.0
+offset_top = -206.0
+offset_right = 1771.0
+offset_bottom = 774.0
+
+[node name="WeekDatumContainer" type="HBoxContainer" parent="PlanningManager/HBoxContainer2/AgendaUI/Control/MaandButton/AngendaVbox" unique_id=383858318]
+layout_mode = 2
+
+[node name="PreviosButton" type="Button" parent="PlanningManager/HBoxContainer2/AgendaUI/Control/MaandButton/AngendaVbox/WeekDatumContainer" unique_id=567450542]
+layout_mode = 2
+text = "Previos"
+
+[node name="Label" type="Label" parent="PlanningManager/HBoxContainer2/AgendaUI/Control/MaandButton/AngendaVbox/WeekDatumContainer" unique_id=403413371]
+layout_mode = 2
+size_flags_horizontal = 6
+
+[node name="NextButton" type="Button" parent="PlanningManager/HBoxContainer2/AgendaUI/Control/MaandButton/AngendaVbox/WeekDatumContainer" unique_id=615913235]
+layout_mode = 2
+size_flags_horizontal = 10
+text = "Previos"
+
+[node name="DagenContainers" type="HBoxContainer" parent="PlanningManager/HBoxContainer2/AgendaUI/Control/MaandButton/AngendaVbox" unique_id=311916684]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Maandag" type="VBoxContainer" parent="PlanningManager/HBoxContainer2/AgendaUI/Control/MaandButton/AngendaVbox/DagenContainers" unique_id=2001205412]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Dinsdag" type="VBoxContainer" parent="PlanningManager/HBoxContainer2/AgendaUI/Control/MaandButton/AngendaVbox/DagenContainers" unique_id=830271406]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Woensdag" type="VBoxContainer" parent="PlanningManager/HBoxContainer2/AgendaUI/Control/MaandButton/AngendaVbox/DagenContainers" unique_id=1414488778]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Donderdag" type="VBoxContainer" parent="PlanningManager/HBoxContainer2/AgendaUI/Control/MaandButton/AngendaVbox/DagenContainers" unique_id=1358392870]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Vrijdag" type="VBoxContainer" parent="PlanningManager/HBoxContainer2/AgendaUI/Control/MaandButton/AngendaVbox/DagenContainers" unique_id=614829582]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Zaterdag" type="VBoxContainer" parent="PlanningManager/HBoxContainer2/AgendaUI/Control/MaandButton/AngendaVbox/DagenContainers" unique_id=404338478]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Zondag" type="VBoxContainer" parent="PlanningManager/HBoxContainer2/AgendaUI/Control/MaandButton/AngendaVbox/DagenContainers" unique_id=19732650]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VandaagContainer" type="PanelContainer" parent="PlanningManager/HBoxContainer2/AgendaUI" unique_id=1453937905]
+visible = false
+custom_minimum_size = Vector2(600, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="Label" type="Label" parent="PlanningManager/HBoxContainer2/AgendaUI/VandaagContainer" unique_id=1665071573]
+layout_mode = 2
+text = "hoi"
+
+[node name="MaandContainer" type="PanelContainer" parent="PlanningManager/HBoxContainer2/AgendaUI" unique_id=1598048975]
+visible = false
+custom_minimum_size = Vector2(600, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="Label" type="Label" parent="PlanningManager/HBoxContainer2/AgendaUI/MaandContainer" unique_id=2011948184]
+layout_mode = 2
+text = "jaha"
