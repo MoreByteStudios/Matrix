@@ -12,6 +12,7 @@ var margincontainers: Array[MarginContainer] = []
 @onready var vandaag_container: PanelContainer = %VandaagContainer
 @onready var maand_container: PanelContainer = %MaandContainer
 
+
 @export var maand_titel_label: Label
 @export var dagnaam_labels: Array[Label] # Voor "Maandag"
 @export var getal_labels: Array[Label]   # Voor "1"
@@ -23,6 +24,7 @@ var maand_namen = ["January", "February", "March", "April", "May", "June", "July
 var press_count2 = 0
 var press_count1 = 0
 
+@onready var taskbar_scene = preload("uid://cn63lfysnxatm")
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	margincontainers = [
@@ -38,6 +40,7 @@ func _ready() -> void:
 	
 	vandaag_container.hide()
 	maand_container.hide()
+	$"../../../TaskAddTab".hide()
 	
 	update_agenda()
 	
@@ -153,3 +156,19 @@ func _on_next_button_pressed() -> void:
 func _on_previos_button_pressed() -> void:
 	week_offset -= 1
 	update_agenda()
+
+
+func _on_planning_list_maandag_adder_task_pressed() -> void:
+	var add_task = %PlanningListMaandagAdderTask
+	var Save_task = %SaveButton
+	if add_task.pressed:
+		$"../../../TaskAddTab".show()
+		pass
+	if Save_task.pressed:
+		var instantie = taskbar_scene.instantiate()
+		%MaandagPlanningList.add_child(instantie)
+		$"../../../TaskAddTab".hide()
+
+func _on_deadline_list_maandag_adder_task_pressed() -> void:
+	pass # Replace with function body.
+	
