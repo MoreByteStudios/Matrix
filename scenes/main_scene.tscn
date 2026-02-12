@@ -389,7 +389,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="MaandagDeadlineList" type="VBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Maandag/MaandagDeadlineScroler/VBoxContainer" unique_id=1476038871]
+[node name="DeadlineContainer" type="VBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Maandag/MaandagDeadlineScroler/VBoxContainer" unique_id=1476038871]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
@@ -422,8 +422,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="MaandagPlanningList" type="VBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Maandag/MaandagPlanninglistScroller/VBoxContainer" unique_id=2082979638]
-unique_name_in_owner = true
+[node name="PlanningList" type="VBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Maandag/MaandagPlanninglistScroller/VBoxContainer" unique_id=2082979638]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -459,6 +458,77 @@ layout_mode = 2
 text = "2"
 horizontal_alignment = 1
 
+[node name="HSeparator" type="HSeparator" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Dinsdag" unique_id=1181023203]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+
+[node name="DinsdagDeadlineScroler" type="ScrollContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Dinsdag" unique_id=114836880]
+layout_mode = 2
+size_flags_vertical = 3
+theme = SubResource("Theme_pu3yx")
+theme_override_colors/scroll_hint_vertical_color = Color(0, 0, 0, 1)
+theme_override_colors/scroll_hint_horizontal_color = Color(0, 0, 0, 1)
+draw_focus_border = true
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Dinsdag/DinsdagDeadlineScroler" unique_id=1942805264]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="DeadlineContainer" type="VBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Dinsdag/DinsdagDeadlineScroler/VBoxContainer" unique_id=229674927]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Control" type="Control" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Dinsdag/DinsdagDeadlineScroler/VBoxContainer" unique_id=614691014]
+layout_mode = 2
+
+[node name="DeadlineListMaandagAdderTask" type="Button" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Dinsdag/DinsdagDeadlineScroler/VBoxContainer/Control" unique_id=1026684103]
+top_level = true
+layout_mode = 0
+offset_left = 753.0
+offset_top = 249.0
+offset_right = 761.0
+offset_bottom = 257.0
+scale = Vector2(2, 2)
+
+[node name="HSeparator3" type="HSeparator" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Dinsdag" unique_id=658908106]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+
+[node name="DinsdagPlanninglistScroller" type="ScrollContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Dinsdag" unique_id=254429491]
+layout_mode = 2
+size_flags_vertical = 3
+theme = SubResource("Theme_rt2n2")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Dinsdag/DinsdagPlanninglistScroller" unique_id=705549007]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PlanningLIst" type="VBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Dinsdag/DinsdagPlanninglistScroller/VBoxContainer" unique_id=1172848596]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Control" type="Control" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Dinsdag/DinsdagPlanninglistScroller/VBoxContainer" unique_id=488232325]
+layout_mode = 2
+
+[node name="PlanningListMaandagAdderTask" type="Button" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Dinsdag/DinsdagPlanninglistScroller/VBoxContainer/Control" unique_id=147704357]
+top_level = true
+layout_mode = 0
+offset_left = 753.0
+offset_top = 628.0
+offset_right = 761.0
+offset_bottom = 636.0
+scale = Vector2(2, 2)
+
+[node name="HSeparator2" type="HSeparator" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Dinsdag" unique_id=128987856]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+
 [node name="Woensdag" type="VBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers" unique_id=1893068041]
 layout_mode = 2
 size_flags_horizontal = 3
@@ -472,6 +542,77 @@ horizontal_alignment = 1
 layout_mode = 2
 text = "3"
 horizontal_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Woensdag" unique_id=1790145667]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+
+[node name="WoensdagDeadlineScroler" type="ScrollContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Woensdag" unique_id=160450227]
+layout_mode = 2
+size_flags_vertical = 3
+theme = SubResource("Theme_pu3yx")
+theme_override_colors/scroll_hint_vertical_color = Color(0, 0, 0, 1)
+theme_override_colors/scroll_hint_horizontal_color = Color(0, 0, 0, 1)
+draw_focus_border = true
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Woensdag/WoensdagDeadlineScroler" unique_id=2069168082]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="DeadlineContainer" type="VBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Woensdag/WoensdagDeadlineScroler/VBoxContainer" unique_id=1448974361]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Control" type="Control" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Woensdag/WoensdagDeadlineScroler/VBoxContainer" unique_id=1088747172]
+layout_mode = 2
+
+[node name="DeadlineListMaandagAdderTask" type="Button" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Woensdag/WoensdagDeadlineScroler/VBoxContainer/Control" unique_id=408624497]
+top_level = true
+layout_mode = 0
+offset_left = 961.0
+offset_top = 249.0
+offset_right = 969.0
+offset_bottom = 257.0
+scale = Vector2(2, 2)
+
+[node name="HSeparator3" type="HSeparator" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Woensdag" unique_id=1237603446]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+
+[node name="WoensdagPlanninglistScroller" type="ScrollContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Woensdag" unique_id=1554729280]
+layout_mode = 2
+size_flags_vertical = 3
+theme = SubResource("Theme_rt2n2")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Woensdag/WoensdagPlanninglistScroller" unique_id=506105729]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PlanningLIst" type="VBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Woensdag/WoensdagPlanninglistScroller/VBoxContainer" unique_id=1805477961]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Control" type="Control" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Woensdag/WoensdagPlanninglistScroller/VBoxContainer" unique_id=1493988656]
+layout_mode = 2
+
+[node name="PlanningListMaandagAdderTask" type="Button" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Woensdag/WoensdagPlanninglistScroller/VBoxContainer/Control" unique_id=1434986057]
+top_level = true
+layout_mode = 0
+offset_left = 961.0
+offset_top = 628.0
+offset_right = 969.0
+offset_bottom = 636.0
+scale = Vector2(2, 2)
+
+[node name="HSeparator2" type="HSeparator" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Woensdag" unique_id=740820541]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
 
 [node name="Donderdag" type="VBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers" unique_id=183183543]
 layout_mode = 2
@@ -487,6 +628,77 @@ layout_mode = 2
 text = "4"
 horizontal_alignment = 1
 
+[node name="HSeparator" type="HSeparator" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Donderdag" unique_id=298345773]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+
+[node name="DonderdagDeadlineScroler" type="ScrollContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Donderdag" unique_id=1156644745]
+layout_mode = 2
+size_flags_vertical = 3
+theme = SubResource("Theme_pu3yx")
+theme_override_colors/scroll_hint_vertical_color = Color(0, 0, 0, 1)
+theme_override_colors/scroll_hint_horizontal_color = Color(0, 0, 0, 1)
+draw_focus_border = true
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Donderdag/DonderdagDeadlineScroler" unique_id=345196455]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="DeadlineContainer" type="VBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Donderdag/DonderdagDeadlineScroler/VBoxContainer" unique_id=1059653381]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Control" type="Control" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Donderdag/DonderdagDeadlineScroler/VBoxContainer" unique_id=1677864180]
+layout_mode = 2
+
+[node name="DeadlineListMaandagAdderTask" type="Button" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Donderdag/DonderdagDeadlineScroler/VBoxContainer/Control" unique_id=1915999484]
+top_level = true
+layout_mode = 0
+offset_left = 1169.0
+offset_top = 249.0
+offset_right = 1177.0
+offset_bottom = 257.0
+scale = Vector2(2, 2)
+
+[node name="HSeparator3" type="HSeparator" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Donderdag" unique_id=2025437090]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+
+[node name="DonderdagPlanninglistScroller" type="ScrollContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Donderdag" unique_id=536495418]
+layout_mode = 2
+size_flags_vertical = 3
+theme = SubResource("Theme_rt2n2")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Donderdag/DonderdagPlanninglistScroller" unique_id=1807410281]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PlanningLIst" type="VBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Donderdag/DonderdagPlanninglistScroller/VBoxContainer" unique_id=9809290]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Control" type="Control" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Donderdag/DonderdagPlanninglistScroller/VBoxContainer" unique_id=1700263860]
+layout_mode = 2
+
+[node name="PlanningListMaandagAdderTask" type="Button" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Donderdag/DonderdagPlanninglistScroller/VBoxContainer/Control" unique_id=1022594593]
+top_level = true
+layout_mode = 0
+offset_left = 1170.0
+offset_top = 628.0
+offset_right = 1178.0
+offset_bottom = 636.0
+scale = Vector2(2, 2)
+
+[node name="HSeparator2" type="HSeparator" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Donderdag" unique_id=2028031646]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+
 [node name="Vrijdag" type="VBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers" unique_id=1119714456]
 layout_mode = 2
 size_flags_horizontal = 3
@@ -500,6 +712,77 @@ horizontal_alignment = 1
 layout_mode = 2
 text = "5"
 horizontal_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Vrijdag" unique_id=236997146]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+
+[node name="VrijdagDeadlineScroler" type="ScrollContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Vrijdag" unique_id=673939544]
+layout_mode = 2
+size_flags_vertical = 3
+theme = SubResource("Theme_pu3yx")
+theme_override_colors/scroll_hint_vertical_color = Color(0, 0, 0, 1)
+theme_override_colors/scroll_hint_horizontal_color = Color(0, 0, 0, 1)
+draw_focus_border = true
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Vrijdag/VrijdagDeadlineScroler" unique_id=140519171]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="DeadlineContainer" type="VBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Vrijdag/VrijdagDeadlineScroler/VBoxContainer" unique_id=92683633]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Control" type="Control" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Vrijdag/VrijdagDeadlineScroler/VBoxContainer" unique_id=1682974232]
+layout_mode = 2
+
+[node name="DeadlineListMaandagAdderTask" type="Button" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Vrijdag/VrijdagDeadlineScroler/VBoxContainer/Control" unique_id=1665744645]
+top_level = true
+layout_mode = 0
+offset_left = 1378.0
+offset_top = 249.0
+offset_right = 1386.0
+offset_bottom = 257.0
+scale = Vector2(2, 2)
+
+[node name="HSeparator3" type="HSeparator" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Vrijdag" unique_id=1238594291]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+
+[node name="VrijdagPlanninglistScroller" type="ScrollContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Vrijdag" unique_id=439426391]
+layout_mode = 2
+size_flags_vertical = 3
+theme = SubResource("Theme_rt2n2")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Vrijdag/VrijdagPlanninglistScroller" unique_id=1341101959]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PlanningLIst" type="VBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Vrijdag/VrijdagPlanninglistScroller/VBoxContainer" unique_id=1579625284]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Control" type="Control" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Vrijdag/VrijdagPlanninglistScroller/VBoxContainer" unique_id=407475519]
+layout_mode = 2
+
+[node name="PlanningListMaandagAdderTask" type="Button" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Vrijdag/VrijdagPlanninglistScroller/VBoxContainer/Control" unique_id=902620123]
+top_level = true
+layout_mode = 0
+offset_left = 1378.0
+offset_top = 628.0
+offset_right = 1386.0
+offset_bottom = 636.0
+scale = Vector2(2, 2)
+
+[node name="HSeparator2" type="HSeparator" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Vrijdag" unique_id=910506988]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
 
 [node name="Zaterdag" type="VBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers" unique_id=357184296]
 layout_mode = 2
@@ -515,6 +798,77 @@ layout_mode = 2
 text = "6"
 horizontal_alignment = 1
 
+[node name="HSeparator" type="HSeparator" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Zaterdag" unique_id=1207429594]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+
+[node name="ZaterdagDeadlineScroler" type="ScrollContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Zaterdag" unique_id=1626388860]
+layout_mode = 2
+size_flags_vertical = 3
+theme = SubResource("Theme_pu3yx")
+theme_override_colors/scroll_hint_vertical_color = Color(0, 0, 0, 1)
+theme_override_colors/scroll_hint_horizontal_color = Color(0, 0, 0, 1)
+draw_focus_border = true
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Zaterdag/ZaterdagDeadlineScroler" unique_id=867463235]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="DeadlineContainer" type="VBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Zaterdag/ZaterdagDeadlineScroler/VBoxContainer" unique_id=1935011962]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Control" type="Control" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Zaterdag/ZaterdagDeadlineScroler/VBoxContainer" unique_id=480652017]
+layout_mode = 2
+
+[node name="DeadlineListMaandagAdderTask" type="Button" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Zaterdag/ZaterdagDeadlineScroler/VBoxContainer/Control" unique_id=1898304248]
+top_level = true
+layout_mode = 0
+offset_left = 1588.0
+offset_top = 249.0
+offset_right = 1596.0
+offset_bottom = 257.0
+scale = Vector2(2, 2)
+
+[node name="HSeparator3" type="HSeparator" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Zaterdag" unique_id=1757128751]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+
+[node name="ZaterdagPlanninglistScroller" type="ScrollContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Zaterdag" unique_id=1822046842]
+layout_mode = 2
+size_flags_vertical = 3
+theme = SubResource("Theme_rt2n2")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Zaterdag/ZaterdagPlanninglistScroller" unique_id=1147993061]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PlanningLIst" type="VBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Zaterdag/ZaterdagPlanninglistScroller/VBoxContainer" unique_id=125148845]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Control" type="Control" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Zaterdag/ZaterdagPlanninglistScroller/VBoxContainer" unique_id=2093421652]
+layout_mode = 2
+
+[node name="PlanningListMaandagAdderTask" type="Button" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Zaterdag/ZaterdagPlanninglistScroller/VBoxContainer/Control" unique_id=988976468]
+top_level = true
+layout_mode = 0
+offset_left = 1588.0
+offset_top = 628.0
+offset_right = 1596.0
+offset_bottom = 636.0
+scale = Vector2(2, 2)
+
+[node name="HSeparator2" type="HSeparator" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Zaterdag" unique_id=101248797]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+
 [node name="Zondag" type="VBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers" unique_id=793543232]
 layout_mode = 2
 size_flags_horizontal = 3
@@ -528,6 +882,77 @@ horizontal_alignment = 1
 layout_mode = 2
 text = "7"
 horizontal_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Zondag" unique_id=629674518]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+
+[node name="ZondagDeadlineScroler" type="ScrollContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Zondag" unique_id=1955857003]
+layout_mode = 2
+size_flags_vertical = 3
+theme = SubResource("Theme_pu3yx")
+theme_override_colors/scroll_hint_vertical_color = Color(0, 0, 0, 1)
+theme_override_colors/scroll_hint_horizontal_color = Color(0, 0, 0, 1)
+draw_focus_border = true
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Zondag/ZondagDeadlineScroler" unique_id=28393321]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="DeadlineContainer" type="VBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Zondag/ZondagDeadlineScroler/VBoxContainer" unique_id=455525877]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Control" type="Control" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Zondag/ZondagDeadlineScroler/VBoxContainer" unique_id=1530224439]
+layout_mode = 2
+
+[node name="DeadlineListMaandagAdderTask" type="Button" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Zondag/ZondagDeadlineScroler/VBoxContainer/Control" unique_id=386781213]
+top_level = true
+layout_mode = 0
+offset_left = 1795.0
+offset_top = 249.0
+offset_right = 1803.0
+offset_bottom = 257.0
+scale = Vector2(2, 2)
+
+[node name="HSeparator3" type="HSeparator" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Zondag" unique_id=660704813]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+
+[node name="ZondagPlanninglistScroller" type="ScrollContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Zondag" unique_id=1550188220]
+layout_mode = 2
+size_flags_vertical = 3
+theme = SubResource("Theme_rt2n2")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Zondag/ZondagPlanninglistScroller" unique_id=1427745512]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PlanningLIst" type="VBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Zondag/ZondagPlanninglistScroller/VBoxContainer" unique_id=781288910]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Control" type="Control" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Zondag/ZondagPlanninglistScroller/VBoxContainer" unique_id=698056192]
+layout_mode = 2
+
+[node name="PlanningListMaandagAdderTask" type="Button" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Zondag/ZondagPlanninglistScroller/VBoxContainer/Control" unique_id=746156720]
+top_level = true
+layout_mode = 0
+offset_left = 1795.0
+offset_top = 628.0
+offset_right = 1803.0
+offset_bottom = 636.0
+scale = Vector2(2, 2)
+
+[node name="HSeparator2" type="HSeparator" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Zondag" unique_id=1630297066]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
 
 [node name="VandaagContainer" type="PanelContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI" unique_id=145357278]
 unique_name_in_owner = true
@@ -798,6 +1223,113 @@ offset_bottom = 51.0
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="DetailTab" type="PanelContainer" parent="." unique_id=1178361128]
+visible = false
+top_level = true
+layout_direction = 4
+layout_mode = 0
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -600.0
+offset_top = 50.0
+offset_right = -50.0
+offset_bottom = -50.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_pu3yx")
+
+[node name="Control2" type="Control" parent="DetailTab" unique_id=1241218225]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="DetailTab/Control2" unique_id=1306784169]
+top_level = true
+layout_mode = 0
+offset_left = 1321.0
+offset_top = 51.0
+offset_right = 1869.0
+offset_bottom = 1029.0
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="DetailTab/Control2/MarginContainer" unique_id=834210699]
+layout_mode = 2
+
+[node name="HSeparator" type="HSeparator" parent="DetailTab/Control2/MarginContainer/VBoxContainer" unique_id=181721573]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="Title" type="Button" parent="DetailTab/Control2/MarginContainer/VBoxContainer" unique_id=503631950]
+layout_mode = 2
+disabled = true
+text = "Title"
+alignment = 0
+
+[node name="Description" type="Button" parent="DetailTab/Control2/MarginContainer/VBoxContainer" unique_id=2024686473]
+layout_mode = 2
+disabled = true
+text = "Description"
+alignment = 0
+
+[node name="LinkButton" type="LinkButton" parent="DetailTab/Control2/MarginContainer/VBoxContainer" unique_id=2124507779]
+layout_mode = 2
+text = "Link"
+
+[node name="FileLabel" type="Label" parent="DetailTab/Control2/MarginContainer/VBoxContainer" unique_id=1660049127]
+layout_mode = 2
+text = "Files:"
+
+[node name="Files" type="VBoxContainer" parent="DetailTab/Control2/MarginContainer/VBoxContainer" unique_id=861047542]
+layout_mode = 2
+
+[node name="ColorLabel" type="Label" parent="DetailTab/Control2/MarginContainer/VBoxContainer" unique_id=1964506682]
+layout_mode = 2
+text = "Color:"
+
+[node name="ColorCurrent" type="Button" parent="DetailTab/Control2/MarginContainer/VBoxContainer" unique_id=1170783874]
+self_modulate = Color(6.6531863, 6.6531863, 6.6531863, 0.8235294)
+custom_minimum_size = Vector2(0, 15)
+layout_mode = 2
+
+[node name="DateLable" type="Label" parent="DetailTab/Control2/MarginContainer/VBoxContainer" unique_id=27133700]
+layout_mode = 2
+text = "Deadline Date"
+horizontal_alignment = 1
+
+[node name="DeadlineLabel" type="Label" parent="DetailTab/Control2/MarginContainer/VBoxContainer" unique_id=606080943]
+layout_mode = 2
+
+[node name="DeleteButton" type="Button" parent="DetailTab/Control2/MarginContainer/VBoxContainer" unique_id=1240223393]
+layout_mode = 2
+text = "Delete"
+
+[node name="EditButton" type="Button" parent="DetailTab/Control2/MarginContainer/VBoxContainer" unique_id=1337660399]
+layout_mode = 2
+text = "Edit"
+
+[node name="Control" type="Control" parent="DetailTab" unique_id=1401901573]
+show_behind_parent = true
+clip_children = 1
+layout_mode = 2
+
+[node name="BesideClickButton" type="Button" parent="DetailTab/Control" unique_id=1293947526]
+self_modulate = Color(1, 1, 1, 0)
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1321.0
+offset_top = -51.0
+offset_right = 51.0
+offset_bottom = 51.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[connection signal="pressed" from="PanelManager/HBoxContainer/VBoxContainer/Button4" to="." method="_on_exit_pressed"]
 [connection signal="pressed" from="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/Control/VandaagButton" to="PanelManager/HBoxContainer/PlanningContainer" method="_on_vandaag_button_pressed"]
 [connection signal="pressed" from="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/Control/MaandButton" to="PanelManager/HBoxContainer/PlanningContainer" method="_on_maand_button_pressed"]
 [connection signal="pressed" from="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/WeekDatumContainer/PreviosButton" to="PanelManager/HBoxContainer/PlanningContainer" method="_on_previos_button_pressed"]
@@ -806,4 +1338,6 @@ grow_vertical = 2
 [connection signal="pressed" from="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Maandag/MaandagPlanninglistScroller/VBoxContainer/Control/PlanningListMaandagAdderTask" to="PanelManager/HBoxContainer/PlanningContainer" method="_on_planning_list_maandag_adder_task_pressed"]
 [connection signal="pressed" from="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/VandaagContainer/Control/CloseButton" to="PanelManager/HBoxContainer/PlanningContainer" method="_on_close_button_pressed"]
 [connection signal="pressed" from="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/MaandContainer/Control/CloseButton2" to="PanelManager/HBoxContainer/PlanningContainer" method="_on_close_button_2_pressed"]
-[connection signal="pressed" from="TaskAddTab/Control2/MarginContainer/VBoxContainer/SaveButton" to="PanelManager/HBoxContainer/PlanningContainer" method="_on_planning_list_maandag_adder_task_pressed"]
+[connection signal="pressed" from="TaskAddTab/Control2/MarginContainer/VBoxContainer/SaveButton" to="PanelManager/HBoxContainer/PlanningContainer" method="_on_save_pressed"]
+[connection signal="pressed" from="DetailTab/Control2/MarginContainer/VBoxContainer/DeleteButton" to="PanelManager/HBoxContainer/PlanningContainer" method="_on_save_pressed"]
+[connection signal="pressed" from="DetailTab/Control2/MarginContainer/VBoxContainer/EditButton" to="PanelManager/HBoxContainer/PlanningContainer" method="_on_save_pressed"]

@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://cn63lfysnxatm"]
 
+[ext_resource type="Script" uid="uid://bxdhtufcbyb4g" path="res://Scripts/task_bar.gd" id="1_7nphs"]
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kqfem"]
 bg_color = Color(0.6891775, 0.58873814, 0.34856912, 1)
 border_width_left = 1
@@ -29,6 +31,7 @@ scale = Vector2(0.165, 0.165)
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_styles/normal = SubResource("StyleBoxFlat_kqfem")
+script = ExtResource("1_7nphs")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=982130367]
 layout_mode = 0
@@ -49,7 +52,7 @@ layout_mode = 2
 custom_minimum_size = Vector2(1300, 0)
 layout_mode = 2
 
-[node name="Title" type="Label" parent="HBoxContainer/VBoxContainer2" unique_id=1119935325]
+[node name="TitleInput" type="Label" parent="HBoxContainer/VBoxContainer2" unique_id=1119935325]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -57,7 +60,7 @@ text = "hi"
 label_settings = SubResource("LabelSettings_8tog5")
 vertical_alignment = 1
 
-[node name="Description" type="Label" parent="HBoxContainer/VBoxContainer2" unique_id=819081782]
+[node name="DetailInput" type="Label" parent="HBoxContainer/VBoxContainer2" unique_id=819081782]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -65,7 +68,7 @@ text = "hi"
 label_settings = SubResource("LabelSettings_8tog5")
 vertical_alignment = 1
 
-[node name="Clock" type="TextureRect" parent="." unique_id=907948784]
+[node name="Emoji" type="TextureRect" parent="." unique_id=907948784]
 layout_mode = 0
 offset_left = 1568.3633
 offset_top = 274.33325
