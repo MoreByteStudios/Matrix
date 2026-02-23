@@ -1430,10 +1430,18 @@ offset = Vector2(56.075, 66.145)
 [connection signal="pressed" from="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/VandaagContainer/Control/CloseButton" to="PanelManager/HBoxContainer/PlanningContainer" method="_on_close_button_pressed"]
 [connection signal="pressed" from="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/MaandContainer/Control/CloseButton2" to="PanelManager/HBoxContainer/PlanningContainer" method="_on_close_button_2_pressed"]
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 [connection signal="pressed" from="PanelManager/HBoxContainer/notes/VBoxContainer/HBoxContainer/pen" to="PanelManager/HBoxContainer/notes" method="_on_pen_pressed"]
 [connection signal="pressed" from="PanelManager/HBoxContainer/notes/VBoxContainer/HBoxContainer/gum" to="PanelManager/HBoxContainer/notes" method="_on_gum_pressed"]
 [connection signal="pressed" from="PanelManager/HBoxContainer/notes/VBoxContainer/HBoxContainer/edit text" to="PanelManager/HBoxContainer/notes" method="_on_edit_text_pressed"]
 [connection signal="pressed" from="TaskAddTab/Control2/MarginContainer/VBoxContainer/SaveButton" to="PanelManager/HBoxContainer/PlanningContainer" method="_on_save_pressed"]
+=======
+[connection signal="pressed" from="TaskAddTab/Control2/MarginContainer/VBoxContainer/SaveButton" to="PanelManager/HBoxContainer/PlanningContainer" method="_on_save_button_pressed"]
+>>>>>>> Stashed changes
+=======
+[connection signal="pressed" from="TaskAddTab/Control2/MarginContainer/VBoxContainer/SaveButton" to="PanelManager/HBoxContainer/PlanningContainer" method="_on_save_button_pressed"]
+>>>>>>> Stashed changes
 =======
 [connection signal="pressed" from="TaskAddTab/Control2/MarginContainer/VBoxContainer/SaveButton" to="PanelManager/HBoxContainer/PlanningContainer" method="_on_save_button_pressed"]
 >>>>>>> Stashed changes
