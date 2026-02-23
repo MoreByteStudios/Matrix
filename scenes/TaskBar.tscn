@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 [gd_scene format=3 uid="uid://8csh4fkhwg3o"]
-=======
-[gd_scene format=3 uid="uid://c1tipw742p42t"]
->>>>>>> parent of 9b14a5d (Revert "ANto Callender update")
 
 [ext_resource type="Script" uid="uid://bgega28dhwj2" path="res://Scripts/task_bar.gd" id="1_n8cse"]
 [ext_resource type="Texture2D" uid="uid://bh0qgqufme2vw" path="res://assets/Gemini_Generated_Image_jd34z0jd34z0jd34.png" id="2_cnfsn"]
