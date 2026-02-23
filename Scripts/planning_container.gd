@@ -41,7 +41,7 @@ var maand_namen = ["January", "February", "March", "April", "May", "June", "July
 var press_count2 = 0
 var press_count1 = 0
 
-@onready var task_bar_scene = preload("uid://cn63lfysnxatm")
+@onready var task_bar_scene = preload("res://scenes/TaskBar.tscn")
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	margincontainers = [
