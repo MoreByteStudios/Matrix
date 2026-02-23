@@ -9,7 +9,7 @@ var panels: Array[PanelContainer] = []
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	panels = [
-		%PlanningContainer, %PanelContainer2, %PanelContainer3, %PanelContainer4
+		%PlanningContainer, %chat, %notes, %PanelContainer4
 	]
 	
 	planning.pressed.connect(show_panel.bind(panels[0]))
