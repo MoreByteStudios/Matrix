@@ -126,6 +126,7 @@ size_flags_horizontal = 0
 color = Color(0.556953, 0.556953, 0.5569529, 1)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer" unique_id=570216985]
+custom_minimum_size = Vector2(160, 0)
 layout_mode = 2
 size_flags_horizontal = 0
 mouse_filter = 0
@@ -170,26 +171,10 @@ text = "Schoolplanning
 [node name="HBoxContainer2" type="HBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer" unique_id=1910387206]
 layout_mode = 2
 
-[node name="TasksUi" type="MarginContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2" unique_id=260663023]
-unique_name_in_owner = true
-visible = false
-layout_mode = 2
-size_flags_horizontal = 3
-theme_override_constants/margin_left = 50
-theme_override_constants/margin_right = 50
-
-[node name="HBoxContainer" type="HBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/TasksUi" unique_id=2031958225]
-layout_mode = 2
-
-[node name="VBoxContainer" type="VBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/TasksUi/HBoxContainer" unique_id=1338243782]
-layout_mode = 2
-
-[node name="Label" type="Label" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/TasksUi/HBoxContainer/VBoxContainer" unique_id=896294803]
-layout_mode = 2
-text = "hier komen de tasks"
-
 [node name="AgendaUI" type="MarginContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2" unique_id=722491970]
 unique_name_in_owner = true
+visible = false
+show_behind_parent = true
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_constants/margin_left = 182
@@ -298,6 +283,42 @@ pivot_offset = Vector2(-127, 1229)
 size_flags_horizontal = 0
 color = Color(0.556953, 0.556953, 0.5569529, 1)
 
+[node name="ColorRect11" type="ColorRect" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/Lines" unique_id=1476247807]
+top_level = true
+layout_mode = 0
+offset_left = 767.818
+offset_top = -1147.0
+offset_right = 771.818
+offset_bottom = 386.318
+rotation = 1.5707964
+pivot_offset = Vector2(-127, 1229)
+size_flags_horizontal = 0
+color = Color(0.556953, 0.556953, 0.5569529, 1)
+
+[node name="ColorRect12" type="ColorRect" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/Lines" unique_id=1405078138]
+top_level = true
+layout_mode = 0
+offset_left = 767.818
+offset_top = -744.0
+offset_right = 771.818
+offset_bottom = 789.318
+rotation = 1.5707964
+pivot_offset = Vector2(-127, 1229)
+size_flags_horizontal = 0
+color = Color(0.556953, 0.556953, 0.5569529, 1)
+
+[node name="ColorRect13" type="ColorRect" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/Lines" unique_id=89519340]
+top_level = true
+layout_mode = 0
+offset_left = 767.818
+offset_top = -330.0
+offset_right = 771.818
+offset_bottom = 1203.318
+rotation = 1.5707964
+pivot_offset = Vector2(-127, 1229)
+size_flags_horizontal = 0
+color = Color(0.556953, 0.556953, 0.5569529, 1)
+
 [node name="Control" type="Control" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI" unique_id=1532197523]
 layout_mode = 2
 
@@ -372,6 +393,7 @@ horizontal_alignment = 1
 
 [node name="HSeparator" type="HSeparator" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Maandag" unique_id=1941287666]
 self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(0, 21)
 layout_mode = 2
 
 [node name="MaandagDeadlineScroler" type="ScrollContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Maandag" unique_id=1351406618]
@@ -460,6 +482,7 @@ horizontal_alignment = 1
 
 [node name="HSeparator" type="HSeparator" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Dinsdag" unique_id=1181023203]
 self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(0, 21)
 layout_mode = 2
 
 [node name="DinsdagDeadlineScroler" type="ScrollContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Dinsdag" unique_id=114836880]
@@ -545,6 +568,7 @@ horizontal_alignment = 1
 
 [node name="HSeparator" type="HSeparator" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Woensdag" unique_id=1790145667]
 self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(0, 21)
 layout_mode = 2
 
 [node name="WoensdagDeadlineScroler" type="ScrollContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Woensdag" unique_id=160450227]
@@ -630,6 +654,7 @@ horizontal_alignment = 1
 
 [node name="HSeparator" type="HSeparator" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Donderdag" unique_id=298345773]
 self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(0, 21)
 layout_mode = 2
 
 [node name="DonderdagDeadlineScroler" type="ScrollContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Donderdag" unique_id=1156644745]
@@ -715,6 +740,7 @@ horizontal_alignment = 1
 
 [node name="HSeparator" type="HSeparator" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Vrijdag" unique_id=236997146]
 self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(0, 21)
 layout_mode = 2
 
 [node name="VrijdagDeadlineScroler" type="ScrollContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Vrijdag" unique_id=673939544]
@@ -800,6 +826,7 @@ horizontal_alignment = 1
 
 [node name="HSeparator" type="HSeparator" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Zaterdag" unique_id=1207429594]
 self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(0, 21)
 layout_mode = 2
 
 [node name="ZaterdagDeadlineScroler" type="ScrollContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Zaterdag" unique_id=1626388860]
@@ -885,6 +912,7 @@ horizontal_alignment = 1
 
 [node name="HSeparator" type="HSeparator" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Zondag" unique_id=629674518]
 self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(0, 21)
 layout_mode = 2
 
 [node name="ZondagDeadlineScroler" type="ScrollContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/AngendaVbox/DagenContainers/Zondag" unique_id=1955857003]
@@ -1047,8 +1075,44 @@ offset_bottom = 50.0
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="TasksUi" type="MarginContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2" unique_id=260663023]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 182
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="TaskUiLines" type="Control" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/TasksUi" unique_id=870114665]
+layout_mode = 2
+
+[node name="ColorRect2" type="ColorRect" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/TasksUi/TaskUiLines" unique_id=827757284]
+top_level = true
+layout_mode = 0
+offset_left = 563.0
+offset_top = 124.0
+offset_right = 567.0
+offset_bottom = 1030.0
+pivot_offset = Vector2(1126, 1229)
+size_flags_horizontal = 0
+color = Color(0.556953, 0.556953, 0.5569529, 1)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/TasksUi" unique_id=2031958225]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/TasksUi/HBoxContainer" unique_id=1338243782]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/TasksUi/HBoxContainer/VBoxContainer" unique_id=384379099]
+layout_mode = 2
+text = "Tasks"
+horizontal_alignment = 1
+
 [node name="Schoolplanning" type="MarginContainer" parent="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2" unique_id=294311556]
 unique_name_in_owner = true
+visible = false
 layout_mode = 2
 
 [node name="PanelContainer2" type="PanelContainer" parent="PanelManager/HBoxContainer" unique_id=2043347896]
@@ -1340,18 +1404,18 @@ grow_vertical = 2
 [connection signal="pressed" from="PanelManager/HBoxContainer/PlanningContainer/HBoxContainer2/AgendaUI/MaandContainer/Control/CloseButton2" to="PanelManager/HBoxContainer/PlanningContainer" method="_on_close_button_2_pressed"]
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+<<<<<<< HEAD
 =======
->>>>>>> parent of 16a6831 (ANto Callender update)
+>>>>>>> parent of 9b14a5d (Revert "ANto Callender update")
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 [connection signal="pressed" from="PanelManager/HBoxContainer/notes/VBoxContainer/HBoxContainer/pen" to="PanelManager/HBoxContainer/notes" method="_on_pen_pressed"]
 [connection signal="pressed" from="PanelManager/HBoxContainer/notes/VBoxContainer/HBoxContainer/gum" to="PanelManager/HBoxContainer/notes" method="_on_gum_pressed"]
 [connection signal="pressed" from="PanelManager/HBoxContainer/notes/VBoxContainer/HBoxContainer/edit text" to="PanelManager/HBoxContainer/notes" method="_on_edit_text_pressed"]
 =======
 >>>>>>> parent of 2685831 (note custom cursor)
 [connection signal="pressed" from="TaskAddTab/Control2/MarginContainer/VBoxContainer/SaveButton" to="PanelManager/HBoxContainer/PlanningContainer" method="_on_save_pressed"]
-<<<<<<< HEAD
 =======
 [connection signal="pressed" from="TaskAddTab/Control2/MarginContainer/VBoxContainer/SaveButton" to="PanelManager/HBoxContainer/PlanningContainer" method="_on_save_button_pressed"]
 >>>>>>> Stashed changes
@@ -1361,7 +1425,5 @@ grow_vertical = 2
 =======
 [connection signal="pressed" from="TaskAddTab/Control2/MarginContainer/VBoxContainer/SaveButton" to="PanelManager/HBoxContainer/PlanningContainer" method="_on_save_button_pressed"]
 >>>>>>> Stashed changes
-=======
->>>>>>> parent of 16a6831 (ANto Callender update)
 [connection signal="pressed" from="DetailTab/Control2/MarginContainer/VBoxContainer/DeleteButton" to="PanelManager/HBoxContainer/PlanningContainer" method="_on_save_pressed"]
 [connection signal="pressed" from="DetailTab/Control2/MarginContainer/VBoxContainer/EditButton" to="PanelManager/HBoxContainer/PlanningContainer" method="_on_save_pressed"]
