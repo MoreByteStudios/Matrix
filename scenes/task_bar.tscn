@@ -1,0 +1,84 @@
+[gd_scene format=3 uid="uid://cn63lfysnxatm"]
+
+[ext_resource type="Script" uid="uid://bxdhtufcbyb4g" path="res://Scripts/task_bar.gd" id="1_7nphs"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kqfem"]
+bg_color = Color(0.6891775, 0.58873814, 0.34856912, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.59802485, 0.45823908, 0.25970867, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+shadow_size = 10
+
+[sub_resource type="LabelSettings" id="LabelSettings_8tog5"]
+font_size = 128
+
+[node name="TaskBar" type="Button" unique_id=575160396]
+clip_children = 2
+clip_contents = true
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -546.6667
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.165, 0.165)
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_kqfem")
+script = ExtResource("1_7nphs")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=982130367]
+layout_mode = 0
+offset_right = 1560.0
+offset_bottom = 533.3333
+
+[node name="ColorRect" type="ColorRect" parent="HBoxContainer" unique_id=1338397853]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+color = Color(0.3553136, 0.35531354, 0.35531357, 1)
+
+[node name="VSeparator" type="VSeparator" parent="HBoxContainer" unique_id=1678465231]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(97, 0)
+layout_mode = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="HBoxContainer" unique_id=55143168]
+custom_minimum_size = Vector2(1300, 0)
+layout_mode = 2
+
+[node name="TitleInput" type="Label" parent="HBoxContainer/VBoxContainer2" unique_id=1119935325]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "hi"
+label_settings = SubResource("LabelSettings_8tog5")
+vertical_alignment = 1
+
+[node name="DetailInput" type="Label" parent="HBoxContainer/VBoxContainer2" unique_id=819081782]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "hi"
+label_settings = SubResource("LabelSettings_8tog5")
+vertical_alignment = 1
+
+[node name="Emoji" type="TextureRect" parent="." unique_id=907948784]
+layout_mode = 0
+offset_left = 1568.3633
+offset_top = 274.33325
+offset_right = 1823.3633
+offset_bottom = 529.33325
+
+[node name="CheckBox" type="CheckBox" parent="." unique_id=295430652]
+layout_mode = 0
+offset_left = 1566.4849
+offset_top = 0.57575226
+offset_right = 1590.4849
+offset_bottom = 24.57576
+scale = Vector2(11.52, 11.52)
